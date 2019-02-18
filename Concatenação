@@ -1,0 +1,4 @@
+n1=str(input('Digite um valor'))
+n2=str(input('Digite um valor'))
+s=n1+n2
+print(s)
