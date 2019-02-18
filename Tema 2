@@ -1,1 +1,16 @@
+cpf=1234
+print(cpf)
+print('O meu cpf é',cpf)
+print(type(cpf))
 
+nome='Sidney'
+telefone=45681234
+
+
+print('O seu nome é ',nome)
+print('O seu telefone é ',telefone)
+print('O seu cpf é ',cpf)
+
+print(type(nome))
+print(type(telefone))
+print(type(cpf))
