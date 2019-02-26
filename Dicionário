@@ -1,0 +1,13 @@
+doberman= {
+            'Raça':'Doberman',
+            'Origem':' Alemanha',
+            'Expectativa de vida':'de 10 a 13 anos',
+            'Cores':'Branco, Preto, Fulvo, Blue & Rust, Preto e Ferrugem, Fawn & Rust, Azul, Red & Rust, Vermelho',
+            'Personalidade':'Obediente, Destemido, Leal, Energético, Inteligente, Alerta, Confiante',
+            'Altura':'Macho: 66–72 cm, Feminino: 61–68 cm',
+            'Peso':'Macho: 40–45 kg, Feminino: 32–35 kg'
+         }
+
+print(doberman['Raça'])
+print(doberman['Origem'])
+print(doberman['Personalidade'])
