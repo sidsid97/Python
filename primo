@@ -1,0 +1,6 @@
+num=int(input("Digite um numero: "))
+
+if num%2==1:
+    print('\n',num,'é um número primo.')
+else:
+    print('\n',num,'não é um número primo.')
