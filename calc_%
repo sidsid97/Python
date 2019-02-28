@@ -1,0 +1,14 @@
+print('Descubra aqui qual é a sua contribuição para o INSS\n')
+S=float(input('Digite o valor do seu salário bruto (Use ponto para separar os números): R$'))
+
+if S < 1.693:
+    print('Você deve contribuir 8% do seu salário para o INSS')
+    print('Fazendo as contas você ficará com R$',S*0.92)
+
+elif S >= 1.693 and S < 2.822:
+    print('Você deve contribuir 9% do seu salário para o INSS')
+    print('Fazendo as contas você ficará com R$',S*0.91)
+
+elif S >= 2.822 and S <= 5.645:
+    print('Você deve contribuir 11% do seu salário para o INSS')
+    print('Fazendo as contas você ficará com R$',S*0.89)
