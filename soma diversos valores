@@ -1,0 +1,10 @@
+X=[]
+for C in range(10):
+   X.append(int(input('Digite o valor: ')))
+
+print('O valor digitados são:',X)
+
+total=0
+for i in X:
+    total=total+i
+print('O total de todos os valores é : ',total)
