@@ -1,0 +1,8 @@
+s=str(input('Digite o seu sexo utilizando "M" ou "F": ')).lower()
+
+while s != 'm' and s != 'f':
+    s = input('Digite seu sexo novamente: ').lower()
+
+
+if s == 'm' or s == 'f':
+    print('Obrigado')
