@@ -1,0 +1,17 @@
+print('Vamos ver se você é malandrão mesmo!\n')
+r=str(input('Você entra num castelo escuro com uma caixa de fósforos que tem apenas 1 palito. Não há eletricidade, porém há uma vela, um lampião a gás e uma lamparina a querosene. \nO que você acenderia primeiro?\t')).lower()
+
+if r == 'fósforo':
+    print('\nAcertou malandrão você é um gênio')
+elif r == 'o fósforo':
+    print('\nAcertou malandrão você é um gênio')
+elif r == ('fosforo'):
+    print('\nAcertou malandrão você é um gênio')
+elif r == 'fosforo':
+    print('\nAcertou malandrão você é um gênio')
+elif r == ('palito de fosforo'):
+    print('\nAcertou malandrão você é um gênio')
+elif r == ('palito de fósforo'):
+    print('\nAcertou malandrão você é um gênio')
+else:
+    print('\nDeixe de ser burro muleque é o fósforo desgraça')
