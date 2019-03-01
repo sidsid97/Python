@@ -1,0 +1,5 @@
+print('>>>RANGE<<<')
+A=int(input('Digite o primeiro númemro: \t'))
+B=int(input('Digite o segundo número: \t'))
+for C in range(A,B+1):
+    print(C)
