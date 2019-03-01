@@ -1,0 +1,11 @@
+A=float(input('Insira uma valor para A: '))
+print(' ')
+B=float(input('Insira uma valor para B: '))
+
+C=0
+
+while A > B:
+    A=A-B
+    C=C+1
+
+print('O valores finais de C é {} e de A é {}'.format(C,A))
