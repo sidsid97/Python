@@ -1,0 +1,20 @@
+print('>>>IMC<<<\n')
+a=float(input('Digite a sua altura (usando "." para separar): '))
+print('')
+p=int(input('Digite o seu peso: '))
+imc=float(p/(a**2))
+
+if imc>=16 and imc <= 16.9:
+    print('O seu IMC é',imc,'e você está muito abaixo do peso!')
+elif imc>=17 and imc <=18.4:
+    print('O seu IMC é',imc,'e você está abaixo do peso!')
+elif imc>=18.5 and imc <=24.9:
+    print('O seu IMC é',imc,'e você está com peso normal.')
+elif imc>=25 and imc <=29.9:
+    print('O seu IMC é',imc,'e você está acima do peso!')
+elif imc>=30 and imc <=34.9:
+    print('O seu IMC é',imc,'e você está com obesidade Grau 1!')
+elif imc>=35 and imc <=40:
+    print('O seu IMC é',imc,'e você está com obesidade Grau 2!')
+elif imc>40:
+    print('O seu IMC é',imc,'e você está com obesidade Grau 3')
