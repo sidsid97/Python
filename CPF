@@ -1,0 +1,6 @@
+cpf=int(input('Digite seu cpf : '))
+cpf=str(cpf)
+while len(cpf) != 11 :
+    cpf=int(input('CPF inválido, digite seu CPF novamente: '))
+    cpf=str(cpf)
+print('CPF armazenado com sucesso!')
