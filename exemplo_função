@@ -1,0 +1,15 @@
+def area_triangulo(base,altura):
+    area = ((base*altura)/2)
+    return(area)
+    
+    
+    import func
+
+b=float(input('Digite a base:'))
+a=float(input('Digite a altura: '))
+
+print('')
+
+area = func.area_triangulo(b,a)
+
+print('A área do triângulo é: ',area)
