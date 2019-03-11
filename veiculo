@@ -1,0 +1,17 @@
+class veiculo:
+  def __init__(self, modelo, marca, cor, ano):
+    self.modelo = modelo
+    self.marca = marca
+    self.cor = cor
+    self.ano = ano
+
+  def myfunc(self):
+      print("O modelo do carro é " + self.modelo + " ano ", self.ano)
+
+v1 = veiculo("Uno","Fiat","Vermelho",1998)
+v2 = veiculo("Civic","Honda","Prata",1999)
+
+print(v1.modelo,v1.marca,v1.cor,v1.ano)
+print(v2.modelo,v2.marca,v2.cor,v2.ano)
+print('')
+v1.myfunc()
