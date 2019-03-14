@@ -1,0 +1,57 @@
+class Copo:
+    capacidade_maxima=250
+    capacidade_atual=0
+    material='Plástico'
+    cor=str
+    def __init__(self,cor):
+        self.cor=cor
+
+repetir='s'
+opcao=0
+
+c1 = Copo(str(input('Digite a cor do copo: ')))
+
+print('Atualmente o copo de '+ c1.material+' na cor '+c1.cor+' tem capacidade de ',c1.capacidade_maxima, 'ml e atualmente está com ',c1.capacidade_atual,'ml dentro dele')
+
+while repetir =='s':
+    opcao = int(input('Escolha uma opção:\n'
+                      'Digite 1 para encher\n'
+                      'Digite 2 para esvaziar\n'
+                      'Digite 3 para mostrar a capacidade atual\n'
+                      'Digite 4 para mudar cor\n'
+                      'Digite 5 para mudar material\n'
+                      'Digite 6 para mudar a capacidade máxima\n'
+                      'Digite 7 para mostrar todas as informações do copo\n'
+                      'Digite 8 para sair\n'
+                      ' '))
+    if opcao < 1 or opcao > 8:
+        opcao=int(input('Opção inválida digite uma opção válida: '))
+
+    if opcao == 1:
+        c1.capacidade_atual = c1.capacidade_atual +1
+        if c1.capacidade_atual > c1.capacidade_maxima:
+            print('O copo transbordou!\n')
+        else:
+            print('O copo agora está com ',c1.capacidade_atual,'ml!\n')
+    elif opcao == 2:
+        c1.capacidade_atual = c1.capacidade_atual-1
+        if c1.capacidade_atual == 0:
+            print('O copo esvaziou!\n')
+        else:
+            print('O copo está agora com ',c1.capacidade_atual,'ml!\n')
+    elif opcao == 3:
+        print('\nO copo agora está com ',c1.capacidade_atual,'ml nele.\n')
+    elif opcao == 4:
+        c1.cor=str(input('\nDigite a nova cor do copo: '))
+        print('Cor atualizada com sucesso!\n')
+    elif opcao == 5:
+        c1.material=str(input('\nDigite o novo material do copo: '))
+        print('Material atualizado com sucesso!\n')
+    elif opcao == 6:
+        c1.capacidade_maxima=int(input('\nDigite a nova capacidade máxima do copo:'))
+        print('Capacidade máxima atualizada com sucesso!\n')
+    elif opcao == 7:
+            print('\nAtualmente o copo de '+ c1.material+' na cor '+c1.cor+' tem capacidade de ',c1.capacidade_maxima, 'ml e atualmente está com ',c1.capacidade_atual,'ml dentro dele\n')
+    elif opcao == 8:
+        repetir='f'
+        print('\nObrigado!')
