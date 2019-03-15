@@ -1,0 +1,21 @@
+class Quadrado:
+    def __init__(self,x):
+        self.t = x
+    def valor(self):
+        print('O valor do lado é: ',self.t)
+    def area(self):
+        return self.t * self.t
+
+q1= Quadrado(int(input('Digite o lado do quadrado: ')))
+print('')
+
+opcao=int(input('Para calcular a área do quadrado digite 1\n'
+          'Para saber o valor do lado do quadrado digite 2\n'
+          'Para sair digite 3\n'))
+
+if opcao == 1:
+    print('A área do quadrado é: ',q1.area())
+elif opcao == 2:
+    print('O lado do quadrado é: ',q1.valor())
+elif opcao == 3:
+    print('Bye!')
