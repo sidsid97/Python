@@ -1,0 +1,47 @@
+class Conta_Corrente:
+    numero_da_conta=int
+    nome_correntista=str
+    saldo=0.0
+    saque=float
+    def __init__(self,x):
+        self.nome_correntista = x
+    def bem_vindo(self):
+        print('Bem-vindo '+ self.nome_correntista)
+    def alter_nome(self,y):
+        self.nome_correntista = y
+    def deposito(self,z):
+        self.saldo = z
+    def saque_conta(self,s):
+        self.saque=s
+        self.saldo = self.saldo - self.saque
+        if self.saque > self.saldo:
+            print('Você não possui saldo suficiente para essa operação!')
+    def saldo_conta(self):
+        print('O saldo da sua conta é: ',self.saldo)
+
+
+c1= Conta_Corrente(str(input('Digite o seu nome: ')))
+print('')
+opcao = 5
+
+while opcao ==5:
+    opcao=int(input('Senhor(a)'+c1.nome_correntista+'\nDigite a opção desejada\n'
+                    '1 - Alterar nome\n'
+                    '2 - Depósito\n'
+                    '3 - Saque\n'
+                    '4 - Saldo\n'
+                    '5 - Sair\n'))
+    if opcao == 1:
+        c1.alter_nome(input('Digite o novo nome: '))
+        time.sleep(3.0)
+        print('Nome alterado com sucesso!')
+    elif opcao == 2:
+        c1.deposito(float(input('Digite o quanto gostaria de depositar: ')))
+    elif opcao == 3:
+        c1.saque_conta(float(input('Digite o quanto gostaria de sacar')))
+    elif opcao ==4:
+        c1.saldo_conta()
+    elif opcao == 5:
+        opcao=6
+        print('Volte Sempre!')
+
