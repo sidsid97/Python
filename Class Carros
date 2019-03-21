@@ -1,0 +1,24 @@
+class Carros:
+    rodas= 4
+    motor = 1
+    volante = 1
+    farol = 2
+    placa = str
+    def __init__(self,placa):
+        self.placa = placa
+class Fusca(Carros):
+    modelo = 'Fusca'
+    portas = 2
+    def __init__(self,cor,ano,placa):
+        Carros.__init__(self,placa)
+        self.cor = cor
+        self.ano = ano
+
+fusca1 = Fusca('Branco',1994,'abc-9915')
+
+print('Modelol:', fusca1.modelo)
+print('Ano:', fusca1.ano)
+print('Placa:',fusca1.placa)
+print('Cor:',fusca1.cor)
+print('Rodas:',fusca1.rodas)
+print('Nº Faróis:',fusca1.farol)
